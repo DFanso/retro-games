@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 .App {
   text-align: center;
+  background-color: #000000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .App-logo {
