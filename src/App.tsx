@@ -6,6 +6,7 @@ import Tetris from './components/games/tetris/Tetris';
 import Pong from './components/games/pong/Pong';
 import Pacman from './components/games/pacman/Pacman';
 import Breakout from './components/games/breakout/Breakout';
+import SpaceInvaders from './components/games/spaceinvaders/SpaceInvaders';
 import './App.css';
 
 const BackButton = styled.button`
@@ -55,6 +56,7 @@ const App: React.FC = () => {
       {currentGame === 'pong' && <Pong />}
       {currentGame === 'pacman' && <Pacman />}
       {currentGame === 'breakout' && <Breakout />}
+      {currentGame === 'spaceinvaders' && <SpaceInvaders />}
     </div>
   );
 };

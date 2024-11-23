@@ -1,46 +1,141 @@
-# Getting Started with Create React App
+# Retro Arcade Collection
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React-based collection of classic arcade games, featuring a retro green monochrome aesthetic.
 
-## Available Scripts
+## Games Available
 
-In the project directory, you can run:
+1. **Snake**
+   - Classic snake gameplay
+   - Grow longer by eating food
+   - Avoid walls and self-collision
 
-### `npm start`
+2. **Tetris**
+   - Classic block-stacking puzzle game
+   - Clear lines to score points
+   - Increasing difficulty
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+3. **Pong**
+   - Two-player classic
+   - First to 11 points wins
+   - Use W/S and Up/Down arrows
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+4. **Pac-Man**
+   - Navigate the maze
+   - Eat dots and avoid ghosts
+   - Power pellets turn ghosts blue
 
-### `npm test`
+5. **Breakout**
+   - Classic brick-breaking action
+   - Control paddle to bounce ball
+   - Break all bricks to win
+   - Progressive difficulty
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+6. **Space Invaders**
+   - Defend Earth from alien invasion
+   - Shoot down waves of invaders
+   - Avoid getting hit
+   - Progressive difficulty
 
-### `npm run build`
+## Technology Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- React
+- TypeScript
+- Styled Components
+- HTML5 Canvas
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Responsive design
+- Keyboard controls
+- High score tracking
+- Retro green monochrome aesthetic
+- Smooth animations
+- Game state management
 
-### `npm run eject`
+## Controls
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Snake
+- Arrow keys to change direction
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Tetris
+- Left/Right: Move piece
+- Up: Rotate piece
+- Down: Soft drop
+- Space: Hard drop
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Pong
+- Player 1: W/S keys
+- Player 2: Up/Down arrows
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Pac-Man
+- Arrow keys to move
 
-## Learn More
+### Breakout
+- Left/Right arrows to move paddle
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Space Invaders
+- Left/Right arrows to move
+- Spacebar to shoot
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Development
+
+### Prerequisites
+
+- Node.js >= 14.0.0
+- npm >= 6.0.0
+
+### Installation
+
+1. Clone the repository
+```bash
+git clone [repository-url]
+```
+
+2. Install dependencies
+```bash
+cd games
+npm install
+```
+
+3. Start development server
+```bash
+npm start
+```
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+## Project Structure
+
+```
+games/
+├── src/
+│   ├── components/
+│   │   ├── Dashboard.tsx
+│   │   └── games/
+│   │       ├── snake/
+│   │       ├── tetris/
+│   │       ├── pong/
+│   │       ├── pacman/
+│   │       ├── breakout/
+│   │       └── spaceinvaders/
+│   ├── App.tsx
+│   └── index.tsx
+├── public/
+└── package.json
+```
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Push to the branch
+5. Create a Pull Request
+
+## License
+
+MIT License - feel free to use this code for your own projects!

@@ -109,6 +109,7 @@ const Dashboard: React.FC<DashboardProps> = ({ onGameSelect }) => {
   const pongHighScore = localStorage.getItem('pongHighScore') || '0';
   const pacmanHighScore = localStorage.getItem('pacmanHighScore') || '0';
   const breakoutHighScore = localStorage.getItem('breakoutHighScore') || '0';
+  const spaceInvadersHighScore = localStorage.getItem('spaceInvadersHighScore') || '0';
 
   return (
     <DashboardWrapper>
@@ -148,6 +149,13 @@ const Dashboard: React.FC<DashboardProps> = ({ onGameSelect }) => {
             Classic brick-breaking action! Move the paddle to bounce the ball and break all the bricks.
           </GameDescription>
           <HighScore>High Score: {breakoutHighScore}</HighScore>
+        </GameCard>
+        <GameCard onClick={() => onGameSelect('spaceinvaders')}>
+          <GameTitle>Space Invaders</GameTitle>
+          <GameDescription>
+            Defend Earth from alien invasion! Move and shoot to destroy the invading fleet.
+          </GameDescription>
+          <HighScore>High Score: {spaceInvadersHighScore}</HighScore>
         </GameCard>
       </GamesGrid>
     </DashboardWrapper>
